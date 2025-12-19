@@ -194,11 +194,22 @@ POST /api/v1/users
 ```
 
 ---
+### 📥 Protected Sign Users
+
+```http
+GET /api/v1/auth/signup
+```
+### 📥 Protected Login Users
+
+```http
+GET /api/v1/auth/login
+```
 
 ### 📥 Get All Users
 
 ```http
 GET /api/v1/users
+Authorization: Bearer <JWT_TOKEN>
 ```
 
 ---
@@ -207,6 +218,7 @@ GET /api/v1/users
 
 ```http
 PUT /api/v1/users/:id
+Authorization: Bearer <JWT_TOKEN>
 ```
 
 ```json
@@ -221,6 +233,7 @@ PUT /api/v1/users/:id
 
 ```http
 DELETE /api/v1/users/:id
+Authorization: Bearer <JWT_TOKEN>
 ```
 
 ---
@@ -286,7 +299,6 @@ const logger = (req, res, next) => {
 
 ## 📌 Future Enhancements
 
-* JWT Authentication
 * Role‑based authorization
 * Pagination & filtering
 * Swagger API docs
