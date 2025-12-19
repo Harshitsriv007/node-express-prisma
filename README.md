@@ -1,4 +1,4 @@
-# TodoApp Backend API
+# Express-Prisma Backend API
 
 A production‑ready **Node.js + Express** backend using **Prisma ORM with MongoDB (Replica Set)**. Includes clean architecture, service layer, logging middleware, global error handling, and Prisma best practices.
 
@@ -60,7 +60,7 @@ prisma/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Harshitsriv007/node-express-prisma
 cd todoapp
 ```
 
